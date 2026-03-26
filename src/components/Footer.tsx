@@ -1,6 +1,7 @@
 export default function Footer() {
   return (
     <div
+      id="contact"
       className="relative h-[400px] sm:h-[600px] lg:h-[800px] max-h-[800px]"
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
@@ -9,53 +10,50 @@ export default function Footer() {
           <div className="bg-neutral-900 py-4 sm:py-6 lg:py-8 px-4 sm:px-6 h-full w-full flex flex-col justify-between">
             <div className="flex shrink-0 gap-8 sm:gap-12 lg:gap-20">
               <div className="flex flex-col gap-1 sm:gap-2">
-                <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm">О нас</h3>
+                <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm tracking-widest">Каталог</h3>
                 <a
-                  href="#projects"
+                  href="#catalog"
                   className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
                 >
-                  Проекты
+                  Бытовки
                 </a>
                 <a
-                  href="#mission"
+                  href="#catalog"
                   className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
                 >
-                  Миссия
+                  Блок-контейнеры
                 </a>
                 <a
-                  href="#contact"
+                  href="#catalog"
                   className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
                 >
-                  Связаться
+                  Модульные здания
                 </a>
               </div>
               <div className="flex flex-col gap-1 sm:gap-2">
-                <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm">Обучение</h3>
+                <h3 className="mb-1 sm:mb-2 uppercase text-neutral-400 text-xs sm:text-sm tracking-widest">Контакты</h3>
                 <a
-                  href="#news"
+                  href="tel:+78001234567"
                   className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
                 >
-                  Новости
+                  8 800 123-45-67
                 </a>
                 <a
-                  href="#learn"
+                  href="mailto:info@stroymodul.ru"
                   className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
                 >
-                  Курсы
+                  info@stroymodul.ru
                 </a>
-                <a
-                  href="#publications"
-                  className="text-white hover:text-neutral-400 transition-colors duration-300 text-sm sm:text-base"
-                >
-                  Статьи
-                </a>
+                <span className="text-neutral-400 text-sm sm:text-base">
+                  Пн–Пт, 9:00–18:00
+                </span>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-4 sm:gap-0">
-              <h1 className="text-[18vw] sm:text-[16vw] lg:text-[14vw] leading-[0.8] mt-4 sm:mt-6 lg:mt-10 text-white font-bold tracking-tight">
-                LUMINO
+              <h1 className="text-[14vw] sm:text-[13vw] lg:text-[11vw] leading-[0.8] mt-4 sm:mt-6 lg:mt-10 text-white font-bold tracking-tight">
+                СТРОЙМ<wbr />ОДУЛЬ
               </h1>
-              <p className="text-white text-sm sm:text-base">{new Date().getFullYear()} Lumino</p>
+              <p className="text-neutral-400 text-sm sm:text-base">{new Date().getFullYear()} СтройМодуль</p>
             </div>
           </div>
         </div>
